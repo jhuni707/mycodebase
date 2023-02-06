@@ -178,7 +178,7 @@ int main(){
     // postorder(root);
 
 
-   
+    node* root2=NULL;
     buildtreelevelorder(root2);
     leveltraversal(root2);
 
