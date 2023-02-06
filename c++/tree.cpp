@@ -37,22 +37,22 @@ node* buildtree(node*root){
     return root;
 }
 
-// node* display(node*root){
-//     if(root==NULL){
-//         cout<<"EMPTY!!"<<endl;
-//         return NULL;
-//     }
+node* display(node*root){
+    if(root==NULL){
+        cout<<"EMPTY!!"<<endl;
+        return NULL;
+    }
 
-//     cout<<"Data: "<<root->data<<endl;
+    cout<<"Data: "<<root->data<<endl;
 
-//     cout<<"Value of left child of "<<root->data<<" :"<<endl;
-//     root->left=display(root->left);
+    cout<<"Value of left child of "<<root->data<<" :"<<endl;
+    root->left=display(root->left);
 
-//     cout<<"Value of right child of "<<root->data<<" :"<<endl;
-//     root->right=display(root->right);
+    cout<<"Value of right child of "<<root->data<<" :"<<endl;
+    root->right=display(root->right);
 
-//     return root;
-// }
+    return root;
+}
 
 void leveltraversal(node*root){
     queue<node*> q;
@@ -178,7 +178,7 @@ int main(){
     // postorder(root);
 
 
-    node*root2=NULL;
+   
     buildtreelevelorder(root2);
     leveltraversal(root2);
 
